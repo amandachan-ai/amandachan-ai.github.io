@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amanda Chan</title>
+<meta name="description" content="Hi, I'm Amanda. I make LLM agents trustworthy to delegate to.">
+<meta name="author" content="Amanda Chan">
+<link rel="canonical" href="https://amandachan-ai.github.io/">
+<link rel="alternate" type="application/atom+xml" title="Amanda Chan" href="/feed.xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Amanda Chan">
+<meta property="og:description" content="Hi, I'm Amanda. I make LLM agents trustworthy to delegate to.">
+<meta property="og:url" content="https://amandachan-ai.github.io/">
+<meta property="og:image" content="https://amandachan-ai.github.io/og/home.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+<meta property="og:image:alt" content="Amanda Chan. I make LLM agents trustworthy to delegate to.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="wrap">
+<main>
+<h1>Hi 👋, I'm Amanda.</h1>
+<p class="tagline">I make LLM agents trustworthy to delegate to. Here I share what I learn along the way. Thanks for stopping by:)</p>
+<p class="links">
+<a href="https://github.com/amandachan-ai">GitHub</a> ·
+<a href="https://www.linkedin.com/in/amanda-chan-ai">LinkedIn</a> ·
+<a href="https://x.com/amandachan_ai">X</a> ·
+<span id="email"><button type="button" class="reveal" id="show-email">Show email</button></span>
+<noscript>· Email: turn on JavaScript, or message me on LinkedIn.</noscript>
+</p>
+
+<h2>Writing</h2>
+<ul class="list">
+<li><span class="date">Oct 29, 2026</span><a href="/writing/knowledge-to-judgment/">Knowledge doesn't turn into judgment by itself</a></li>
+</ul>
+
+<h2>Selected work</h2>
+<ul class="list">
+<li><a href="https://github.com/amandachan-ai/agent-rule-of-law">Agent Rule of Law</a>: governing delegation in coding agents (experiment designed, not yet run)</li>
+<li><a href="https://github.com/amandachan-ai/gavel-laws">The GAVEL Laws</a>: Goal fixed first · Authority flows down · Verdict by another · Every error has a way back · Ledger is append-only</li>
+<li><a href="https://github.com/amandachan-ai/self-sealing-revisions">Self-Sealing Revisions</a>: do an agent's self-written lessons foreclose its own future evidence? (negative result)</li>
+<li><a href="https://github.com/amandachan-ai/your-eval-is-lying">Your Eval Is Lying</a>: failure modes of LLM measurement itself</li>
+<li><a href="https://github.com/amandachan-ai/agent-harness-playbook">Agent Harness Playbook</a>: layering rules, knowledge, workflows and capabilities in agent harnesses</li>
+</ul>
+</main>
+
+<footer class="site">
+<p>Amanda Chan · Online since October 29, 2026 · Text licensed under <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · <a href="/feed.xml">Feed</a></p>
+</footer>
+</div>
+<script>
+// The address is assembled only when the button is clicked, so it never appears in the page source.
+document.getElementById('show-email').addEventListener('click', function () {
+  var parts = ['hcet.nahcadnama', 'moc.liamg'].map(function (s) {
+    return s.split('').reverse().join('');
+  });
+  var address = parts.join(String.fromCharCode(64));
+  var link = document.createElement('a');
+  link.href = 'mailto:' + address;
+  link.textContent = address;
+  var slot = document.getElementById('email');
+  slot.replaceChildren(link);
+});
+</script>
+</body>
+</html>

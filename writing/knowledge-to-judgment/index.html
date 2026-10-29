@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Knowledge doesn't turn into judgment by itself · Amanda Chan</title>
+<meta name="description" content="A four-layer model of what mastering AI means, and why knowledge alone doesn't produce judgment.">
+<meta name="author" content="Amanda Chan">
+<link rel="canonical" href="https://amandachan-ai.github.io/writing/knowledge-to-judgment/">
+<link rel="alternate" type="application/atom+xml" title="Amanda Chan" href="/feed.xml">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Knowledge doesn't turn into judgment by itself">
+<meta property="og:description" content="A four-layer model of what mastering AI means, and why knowledge alone doesn't produce judgment.">
+<meta property="og:url" content="https://amandachan-ai.github.io/writing/knowledge-to-judgment/">
+<meta property="article:published_time" content="2026-10-29">
+<meta property="og:image" content="https://amandachan-ai.github.io/og/knowledge-to-judgment.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+<meta property="og:image:alt" content="Knowledge doesn't turn into judgment by itself, by Amanda Chan">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="wrap">
+<header class="site"><a href="/">Amanda Chan</a></header>
+<main>
+<article>
+<h1>Knowledge doesn't turn into judgment by itself</h1>
+<p class="meta"><time datetime="2026-10-29">October 29, 2026</time></p>
+
+<p>To me, mastering AI isn't about learning to use it. It's about building enough understanding of my own that I can judge what it gives me, steer it, and sometimes go further than it can.</p>
+
+<p>Here is the model I've ended up with. It has four layers.</p>
+
+<figure>
+<svg viewBox="0 0 520 300" role="img" aria-labelledby="pyramid-title">
+<title id="pyramid-title">A four-layer pyramid. From bottom to top: internalized knowledge, critical thinking and intuition, judgment and agency, wisdom.</title>
+<polygon class="tier tier-1" points="72.5,220 447.5,220 510,290 10,290"/>
+<polygon class="tier tier-2" points="135,150 385,150 447.5,220 72.5,220"/>
+<polygon class="tier tier-3" points="197.5,80 322.5,80 385,150 135,150"/>
+<polygon class="tier tier-4" points="260,10 322.5,80 197.5,80"/>
+<text class="tier-label" x="260" y="261" text-anchor="middle">Internalized knowledge</text>
+<text class="tier-label" x="260" y="191" text-anchor="middle">Critical thinking &amp; intuition</text>
+<text class="tier-label" x="260" y="121" text-anchor="middle">Judgment &amp; agency</text>
+<text class="tier-label" x="260" y="66" text-anchor="middle">Wisdom</text>
+</svg>
+</figure>
+
+<h2>1. Internalized knowledge</h2>
+
+<p>It helps me to separate three things:</p>
+<ul>
+<li><strong>Information</strong>: I've read a paper on transformers or RL.</li>
+<li><strong>Understanding</strong>: I can explain why it works and where it breaks.</li>
+<li><strong>Internalized knowledge</strong>: I can use the idea on a new problem without looking anything up.</li>
+</ul>
+
+<p>I think of the last one as knowledge becoming part of my body. It takes active recall, real application, and repeated correction, not just a lot of reading.</p>
+
+<h2>2. Critical thinking and intuition</h2>
+
+<p>Critical thinking is being able to explain why something is off. Intuition is noticing it before I can explain it.</p>
+
+<p>Say an agent scores 95% on a benchmark. Someone without the background might take the number at face value. Someone with it will ask:</p>
+<ul>
+<li>Does the benchmark look like the environment the agent will actually work in?</li>
+<li>Could the test data be contaminated?</li>
+<li>Is the metric hiding a class of high-risk failures?</li>
+<li>Did the agent finish the task, or only produce an answer that looks right?</li>
+</ul>
+
+<p>An experienced engineer may sense that something is wrong with an eval design at first glance, and then use careful reasoning to check that sense.</p>
+
+<p>But intuition is a fast hypothesis built from experience, not a fact. It deserves trust only in areas where it has been checked against reliable feedback many times.</p>
+
+<h2>3. Judgment and agency</h2>
+
+<p>With knowledge, critical thinking, and calibrated intuition together, I can lead the work instead of following the model. That means I can:</p>
+<ol>
+<li>Decide which problems are worth solving, instead of being pulled along by whatever answer the model offers.</li>
+<li>Tell which parts of an output are right, wrong, or uncertain.</li>
+<li>Know when to trust the model, when to ask for evidence, and when to check it myself.</li>
+<li>Set the goals, constraints, and evaluation criteria for an AI system.</li>
+</ol>
+
+<p>This is a different skill from prompting.</p>
+
+<h2>4. Wisdom</h2>
+
+<p>At the top is knowing what is worth doing, and what shouldn't be done at all. Being able to get an AI to do something doesn't mean it should be done. That includes long-term consequences, ethics, the effect on other people, and my own values.</p>
+
+<p>Someone who has really mastered AI can do more than control a powerful tool. They know where that power should go.</p>
+
+<h2>The assumption I had to give up</h2>
+
+<p>My first version of this model said: once I know enough, critical thinking and intuition will follow.</p>
+
+<p>Knowledge is still the foundation. But knowing enough doesn't automatically produce good critical thinking or intuition. Plenty of people read many papers and still can't judge a real system. Plenty know the vocabulary and still miss a basic flaw in an experiment.</p>
+
+<p>What sits between knowledge and judgment is a loop:</p>
+<ol>
+<li><strong>Knowledge</strong>: learn the principles and build a mental model.</li>
+<li><strong>Prediction and application</strong>: use the model to predict what will happen, and to solve real problems.</li>
+<li><strong>Feedback and correction</strong>: compare the prediction with reality, find where I was wrong, and fix my understanding.</li>
+<li><strong>Calibrated intuition and judgment</strong>: over many rounds, intuition becomes something I can rely on.</li>
+</ol>
+
+<p>This is why real engineering work matters so much. When I form a hypothesis, design an evaluation, watch a failure in production, trace it to a root cause, and fix the system, I'm not only adding knowledge. I'm training my own judgment.</p>
+</article>
+</main>
+
+<footer class="site">
+<p>Amanda Chan · Text licensed under <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · <a href="/">Home</a> · <a href="/feed.xml">Feed</a></p>
+</footer>
+</div>
+</body>
+</html>
